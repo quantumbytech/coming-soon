@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <style>
         body { margin: 0; padding: 0; }
@@ -20,16 +22,19 @@
             margin-bottom: 25px;
         }
         img {
-            width: 25%; /* Image width */
+            width: auto; /* Image width */
             border: 0; /* For IE */
             /* Aspect ratio of image, gives initial dimension to prevent text moving down once image is loaded */
             /* When changing logo, change this also */
             aspect-ratio: 125 / 50;
+
         }
         #main {
             vertical-align: middle;
             display: table-cell;
+
         }
+
         /* Progress bar */
         #progress {
             width: 45%; /* Bar width */
@@ -38,11 +43,12 @@
             background-color: #a8a8a8; /* Background colour */
             padding: 7px 5px;
             /* border: 5px solid #a8a8a8; Border */
+            margin-bottom: 10%;
         }
         #fill {
             padding: 2px 0;
             background-color: #00b98b; /* Fill colour */
-            width: 35%; /* Bar percentage, change text below also */
+            width: 65%; /* Bar percentage, change text below also */
             border-radius: 25px; /* Roundness */
             animation: proanimate 2s;
         }
@@ -51,6 +57,20 @@
             margin: 0; padding: 0;
             opacity: 1;
             animation: fadein 3s forwards;
+        }
+
+        .fa:hover {
+            opacity: 0.9;
+        }
+ 
+ 
+        .fa {
+            padding: 20px;
+            font-size: 40px;
+            width: 60px;
+            text-decoration: none;
+            margin: 5px 80px;
+            color: #00b98b;
         }
 
         /* Fades in animation */
@@ -82,11 +102,18 @@
 </head>
 <body>
     <div id="main">
-        <img src="logo.png" alt="Logo Image">
-        <h1>Company Name</h1>
+        <img src="./../Quantum bytech web logo.png" alt="Quantum ByTech Image">
+        <h1>Quantum ByTech</h1>
         <h2>Our website is currently under construction. </h2>
-        <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
+        <div id="progress"><div id="fill"><div id="barpercent"><h3>65%</h3></div></div></div>
+        <div id="icons">
+            <h4>Contact Us</h4>
+            <a href="https://www.facebook.com/profile.php?id=61564662700965&mibextid=LQQJ4d" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/quantumbytech" class="fa fa-instagram" aria-hidden="true"></a>
+            <a href="https://wa.me/+96170790677" class="fa fa-whatsapp"></a>
+        </div>
     </div>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </body>
 </html>
